@@ -824,6 +824,11 @@ ul {
   overflow: hidden;
 }
 
+.portfolio__image {
+  display: block;
+  max-width: 100%;
+}
+
 .portfolio__overlay {
   position: absolute;
   top: 0;
