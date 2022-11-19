@@ -88,11 +88,10 @@
     &:focus-visible {
         outline: transparent;
     }
-}
 
-.modal__label:focus-within>.modal__input,
-.modal__label:focus-within>.modal__textarea {
-    border-color: var(--focus-color);
+    .modal__label:focus-within & {
+        border-color: var(--focus-color);
+    }
 }
 
 .modal__icons {
@@ -103,10 +102,10 @@
     transition: color var(--duration) var(--timing-function);
 
     fill: currentColor;
-}
 
-.modal__label:focus-within>.modal__icons {
-    color: var(--focus-color);
+    .modal__label:focus-within & {
+        color: var(--focus-color);
+    }
 }
 
 .modal__textarea {

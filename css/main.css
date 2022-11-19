@@ -723,9 +723,8 @@ ul {
 .modal__textarea:focus-visible {
   outline: transparent;
 }
-
-.modal__label:focus-within > .modal__input,
-.modal__label:focus-within > .modal__textarea {
+.modal__label:focus-within .modal__input,
+.modal__label:focus-within .modal__textarea {
   border-color: var(--focus-color);
 }
 
@@ -737,8 +736,7 @@ ul {
   transition: color var(--duration) var(--timing-function);
   fill: currentColor;
 }
-
-.modal__label:focus-within > .modal__icons {
+.modal__label:focus-within .modal__icons {
   color: var(--focus-color);
 }
 
