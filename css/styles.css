@@ -54,24 +54,16 @@ ul {
   padding-bottom: 94px;
 }
 
-.advantage {
-  padding-bottom: 0;
-}
-
 /* HEADER */
-.page-header .container,
-.page-nav,
-.page-nav__list,
-.page-header__list,
-.page-header__item {
-  display: flex;
-}
-
 .page-header {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid #ececec;
+}
+
+.page-header .container {
+  display: flex;
 }
 
 .page-logo {
@@ -90,20 +82,24 @@ ul {
   color: var(--focus-color);
 }
 
-.page-nav__list {
-  margin-left: 93px;
-}
-
-.page-nav__item:not(:first-child),
-.page-header__item:last-child {
-  margin-left: 50px;
+.page-header__nav {
+  display: flex;
 }
 
 .page-header__list {
+  display: flex;
+  gap: 50px;
+  margin-left: 93px;
+}
+
+.page-header__list--indentation {
   margin-left: auto;
 }
 
-.page-nav__link,
+.page-header__item {
+  display: flex;
+}
+
 .page-header__link {
   display: flex;
   align-items: center;
@@ -119,7 +115,7 @@ ul {
   transition: color var(--duration) var(--timing-function);
 }
 
-.page-header__link {
+.page-header__link--color {
   color: var(--secondary-color);
 }
 
@@ -129,19 +125,17 @@ ul {
   fill: currentColor;
 }
 
-.page-nav__link:hover,
-.page-nav__link:focus,
 .page-header__link:hover,
 .page-header__link:focus {
   color: var(--focus-color);
 }
 
-.page-nav__link--active {
+.page-header__link--active {
   position: relative;
   color: var(--focus-color);
 }
 
-.page-nav__link--active::after {
+.page-header__link--active::after {
   content: "";
 
   position: absolute;
@@ -225,6 +219,10 @@ ul {
 }
 
 /* секція наші переваги */
+.advantage {
+  padding-bottom: 0;
+}
+
 .section-title--hidden {
   position: absolute;
   width: 1px;
